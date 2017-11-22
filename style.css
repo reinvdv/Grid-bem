@@ -1,0 +1,99 @@
+body, html {
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif;
+  color: black;
+}
+.site {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto 3fr;
+}
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column: 1/9;
+  background-color: #e6e6e6;
+  padding: 11px 0;
+}
+.masthead__content {
+  grid-column: 5/8;
+  text-align: right;
+  font-size: 13px;
+}
+
+.mastnav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column: 2/8;
+  padding: 15px 0;
+}
+.mastnav img {position: absolute; top: 3px;}
+.mastnav__content {grid-column: 3/9;}
+.mastnav__content a {
+  display: inline-block;
+  padding: 12px 18px;
+  vertical-align: middle;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.mastnav__content a:hover {opacity: 0.5;}
+.mastnav__content .button {
+  float: right;
+  padding: 12px 25px;
+  background-color: #F7A133;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.imagehead {
+  grid-column: 1/9;
+  width: 100%;
+}
+
+.zijbalk {
+  grid-column: 2/4;
+  padding-top: 30px;
+  padding-right: 40px;
+}
+.zijbalk__head {font-weight: bold;}
+.zijbalk label:hover {color: #F7A133; cursor: pointer;}
+.zijbalk label i {float: right;}
+.zijbalk__underline__orange {border: 2px dashed #F7A133; margin-bottom: 30px;}
+.zijbalk__underline__gray {border: 1px solid #e6e6e6; margin-bottom: 40px;}
+.zijbalk .button {
+  padding: 12px 15px;
+  background-color: #F7A133;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.zijbalk__link {
+  line-height: 35px;
+  font-size: 14px;
+  color: #F7A133;
+}
+.zijbalk__link:hover {color: gray;}
+.content {grid-column: 4/8; font-weight: 16px;}
+.content h2 {color: #F7A133; margin-bottom: 0;}
+.content .button {
+  margin-top: -40px;
+  float: right;
+  padding: 12px 15px;
+  background-color: #F7A133;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.content .button--black {
+  margin-top: -40px;
+  margin-left: 10px;
+  float: right;
+  padding: 12px 15px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.content__underline__orange {border: 2px dashed #F7A133; margin-bottom: 30px;}
